@@ -35,7 +35,7 @@ export default class Home extends Component {
     const state = Date.now().toString();
     const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 
-    return `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=http://localhost:3000&state=${state}&scope=${config.SPOTIFY_SCOPE}`;
+    return `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=http://localhost:3000/homework&state=${state}&scope=${config.SPOTIFY_SCOPE}`;
   }
 
   onSuccessSearch(tracks) {
